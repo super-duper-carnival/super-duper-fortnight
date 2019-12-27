@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Duper - Главная</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <input type="id_name" id="id_name" placeholder="Название урока" name="name">
+        </div>
+        <div>
+            <input type="id_date" id="id_date" placeholder="Дата проведения" name="date">
+        </div>
+        <div>
+            <input type="id_class_name" id="id_class_name" placeholder="Номер класса" name="class_name">
+        </div>
+        <div>
+            <input type="id_class_letter" id="id_class_letter" placeholder="Буква класса" name="class_letter">
+        </div>
+        <button type="submit" class="submit-form">Создать</button>
+    </form>
+</body>
+</html>
